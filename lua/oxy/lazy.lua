@@ -11,4 +11,18 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup("oxy.plugins/")
+require("lazy").setup({
+  {import = "oxy.plugins/"},
+  {import = "oxy.plugins.lsp/"}
+}, {
+  install = {
+    colorscheme = {"hybrid"},
+  },
+  checker = {
+    enabled = true,
+    notify = false,
+  },
+  change_detection = {
+    notify = false,
+  },
+})
