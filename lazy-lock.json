@@ -11,5 +11,6 @@
   "nvim-cmp": { "branch": "main", "commit": "538e37ba87284942c1d76ed38dd497e54e65b891" },
   "nvim-tree.lua": { "branch": "master", "commit": "7bdb220d0fe604a77361e92cdbc7af1b8a412126" },
   "nvim-web-devicons": { "branch": "master", "commit": "140edfcf25093e8b321d13e154cbce89ee868ca0" },
-  "vim-hybrid": { "branch": "master", "commit": "f44c626c9ea72a091ee8b90dbaab1659f8980ab1" }
+  "vim-hybrid": { "branch": "master", "commit": "f44c626c9ea72a091ee8b90dbaab1659f8980ab1" },
+  "which-key.nvim": { "branch": "main", "commit": "4433e5ec9a507e5097571ed55c02ea9658fb268a" }
 }

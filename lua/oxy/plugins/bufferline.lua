@@ -32,5 +32,10 @@ return {
       enforce_regular_tabs = false,
       always_show_bufferline = true
     }
-  }
+  },
+  
+  diagnostics_indicator = function(count, level, diagnostics_dict, context)
+    local icon = level:match("error") and " " or " "
+    return " " .. icon .. count
+  end,
 }
