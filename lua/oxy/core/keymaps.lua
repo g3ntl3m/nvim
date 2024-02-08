@@ -26,3 +26,5 @@ keymap.set("n", "<S-Tab>", "<C-w>:BufferLineCyclePrev<CR>", {noremap = true, sil
 -- Additional Plugins
 keymap.set("n", "<leader>l", ":Lazy<CR>", { desc = "Lazy Menu" })
 keymap.set("n", "<leader>m", ":Mason<CR>", { desc = "Mason LSP Menu" })
+keymap.set("n", "<leader>tf", ":ToggleTerm<CR>")
+keymap.set("n", "<leader>tt", ":ToggleTerm size=14 dir=./ direction=horizontal name=desktop<CR>")
