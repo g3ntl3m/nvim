@@ -36,7 +36,6 @@ opt.autoindent = true
 opt.autoindent = true
 opt.expandtab = true
 opt.expandtab = true
--- opt.vscode_style = "dark"
 -- opt.colorcolumn = "80"
 opt.wrap = true
 opt.linebreak = true
