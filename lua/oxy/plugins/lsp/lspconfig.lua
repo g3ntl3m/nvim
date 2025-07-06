@@ -63,21 +63,14 @@ return {
     local capabilities = cmp_nvim_lsp.default_capabilities()
 
     -- Change the Diagnostic symbols in the sign column (gutter)
-    -- (not in youtube nvim video)
-    local signs = { Error = " ", Warn = " ", Hint = "󰠠 ", Info = " " }
-    for type, icon in pairs(signs) do
-      local hl = "DiagnosticSign" .. type
-      vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
-    end
+--    local signs = { Error = " ", Warn = " ", Hint = "󰠠 ", Info = " " }
+--    for type, icon in pairs(signs) do
+--      local hl = "DiagnosticSign" .. type
+--      vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
+--    end
 
     -- configure html server
     lspconfig["html"].setup({
-      capabilities = capabilities,
-      on_attach = on_attach,
-    })
-
-    -- configure typescript server with plugin
-    lspconfig["tsserver"].setup({
       capabilities = capabilities,
       on_attach = on_attach,
     })
@@ -87,6 +80,13 @@ return {
       capabilities = capabilities,
       on_attach = on_attach,
     })
+
+    -- configure javascript server
+    lspconfig["ts_ls"].setup({
+      capabilities = capabilities,
+      on_attach = on_attach,
+    })
+
 
     -- configure prisma orm server
     lspconfig["prismals"].setup({
