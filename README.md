@@ -48,3 +48,5 @@ nvim
 ### lsp language servers list:
 https://mason-registry.dev/registry/list
 
+### Available lualine default themes:
+https://github.com/nvim-lualine/lualine.nvim/blob/master/THEMES.md

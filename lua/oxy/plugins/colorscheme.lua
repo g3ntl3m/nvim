@@ -1,8 +1,8 @@
 return {
-  "scwood/vim-hybrid",
+  "fcancelinha/nordern.nvim",
   priority = 1000,
   -- load the colorscheme here
   config = function()
-    vim.cmd([[colorscheme hybrid]])
+    vim.cmd([[colorscheme nordern]])
   end,
 }

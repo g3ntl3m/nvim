@@ -16,7 +16,7 @@ require("lazy").setup({
   {import = "oxy.plugins.lsp/"}
 }, {
   install = {
-    colorscheme = {"hybrid"},
+    colorscheme = {"nordern"},
   },
   checker = {
     enabled = true,

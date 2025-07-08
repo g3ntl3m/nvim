@@ -16,7 +16,7 @@ return {
       inactive_bg = "#1d1f21",
     }
 
-    local my_lualine_theme = {
+    local custom_nord = {
       normal = {
         a = { bg = colors.blue, fg = colors.bg, gui = "bold" },
         b = { bg = colors.bg, fg = colors.fg },
@@ -49,10 +49,16 @@ return {
       },
     }
 
+    options = { theme = iceberg_dark }
+    local custom_iceberg_dark = require'lualine.themes.iceberg_dark'
+    local custom_codedark = require'lualine.themes.codedark'
+    local custom_seoul256 = require'lualine.themes.seoul256'
+    local custom_molokai = require'lualine.themes.molokai'
+
     -- configure lualine with modified theme
     lualine.setup({
       options = {
-        theme = my_lualine_theme,
+        theme = custom_nord,
       },
       sections = {
         lualine_x = {

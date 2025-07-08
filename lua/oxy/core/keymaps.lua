@@ -1,7 +1,7 @@
 -- set leader key to space
 vim.g.mapleader = " "
 
-local keymap = vim.keymap 
+local keymap = vim.keymap
 
 -- window management
 keymap.set("n", "<leader>v", "<C-w>v", { desc = "Split window vertically" }) -- split window vertically
